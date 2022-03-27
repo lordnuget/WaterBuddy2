@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+Welkom op de Webshop pagina van WaterBuddy deze pagina is gemaakt door Milan Toen
+
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WaterBuddy Webshop</title>
+
+  <!-- Favicon hiermee word het icoontje in het browser tabje gevuld -->
+  <link rel="icon" href="Images/favicon-16x16.png">
+
+  <!-- SCC stylesheet  hiermee word mijn style sheet ingeladen-->
+  <link rel="stylesheet" href="CSS/Style_Webshop.CSS">
+
+  <!-- fontawesome script is benodigd om bepaalde icoontjes in te laden -->
+  <script src="https://kit.fontawesome.com/6c7c0095fb.js" crossorigin="anonymous"></script>
+
+  <!-- Javascript vanuit hier word alle Javascript aangestuurd -->
+  <script src="Javascript/Webshop.JS" async></script>
+
+</head>
+
+<body>
+
+   <!-- Onderstaande code maakt in html de navigatie bar -->
+
+  <header>
+
+    <!-- Onderstaand stukje code is voor het logo in de navigatie balk -->
+
+    <a href="index.html" class="logoAnchor">
+      <div class="logo">
+        <img src="Images/logo.png" width="50" height="50" alt="WaterBuddy Logo" />
+        <span>WaterBuddy</span>
+      </div>
+    </a>
+
+    <!-- Onderstaand stukje code zorgt voor de navigatie naar anderen pagina's in de navigatie balk -->
+
+    <nav>
+      <div class="menu">
+        <button id="menuButton" class="menuButton">=</button>
+      </div>
+      <div id="menuLinks" class="menuLinks">
+        <a href="index.html" class="button navbutton">Home</a>
+        <a href="webshop.html" class="button navbutton">Webshop</a>
+        <a href="about.html" class="button navbutton">About Us</a>
+        <a href="contact.html" class="button navbutton">Contact</a>
+        <a href="Basket.html" class="button navbuttonBasket">
+          <h4><i class="fas fa-shopping-basket"></i></h4>
+        </a>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- Onderstaand het bovenste tekst gedeelte van het main onderdeel -->
+
+    <p class="topText">
+      Check out our two WaterBuddy products below: the basic and pro model <br>
+      Select "find out more" to learn more about each model <br>
+    </p>
+
+    <!-- Onderstaande 2 divs verzorgen het verkoop plaatje -->
+
+    <div class="shopItems">
+      <p><img class="waterBuddyImage" src="Images/Plant met Waterbuddy Basic.png" alt="WaterBuddy Basic, copyright WaterBuddy" /> <strong class="titleWaterBasic">WaterBuddy
+          Basic</strong><br>
+        Smart care <br>
+        App use <br>
+        <a href="#waterBuddyBasic" class="moreInformation"><strong>Find out more</strong></a><br>
+        <br>
+        <br>
+        <br>
+        <span class="itemPriceBasic">€ 14.99 <small>tax excl</small></span>
+        <button class="buttonBuyNowBasic" data-img="Images/Plant met Waterbuddy Basic.png" data-name="WaterBuddy Basic" data-price="€ 14.99">Add to cart</button>
+      </p>
+
+      <p><img class="waterBuddyImagePro" src="Images/Plant met Waterbuddy Pro.png" alt="WaterBuddy Pro, copyright WaterBuddy" /><strong class="titleWaterPro">WaterBuddy
+          Pro</strong><br>
+        All of Basic <br>
+        Water resovoir <br>
+        Automatic watering <br>
+        <a href="#waterBuddyPro" class="moreInformation"><strong>Find out more</strong></a><br>
+        <br>
+        <span class="itemPricePro">€ 24.99 <small>tax excl</small></span>
+        <button class="buttonBuyNowPro" data-img="Images/Plant met Waterbuddy Pro.png" data-name="WaterBuddy Pro" data-price="€ 24.99">Add to cart</button>
+      </p>
+    </div>
+
+    <!-- Onderstaande 3 divs zijn voor de positiieve boodschap over ons item -->
+
+    <div class="flexboxContainer">
+      <div class="itemFlex itemFlex1">
+        <i class="icon fas fa-check fa-4x"></i>
+        <h3>Easy to use.</h3>
+        <p>Plug in the plantpot, connect to the app and you're done!</p>
+      </div>
+
+      <div class="itemFlex itemFlex2">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3>Guaranteed to work</h3>
+        <p>We guarantee that the product will inform <br> you exactly when your plant needs water. </p>
+      </div>
+
+      <div class="itemFlex itemFlex3">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>Your plants will love you!</h3>
+        <p>Now that they will always have water your plants <br> will live a happy live!</p>
+      </div>
+    </div>
+    
+    <!-- Onderstaande 2 divs verzorgen de extra informatie over ons product -->
+
+    <div class="waterBuddyBasic" id="waterBuddyBasic">
+      <p>
+        <img src="Images/Plant met Waterbuddy Basic.png" alt="WaterBuddy Basic, copyright WaterBuddy" class="basicInformation">
+        <h3 class="waterBuddyBasicText">WaterBuddy Basic</h3><br>
+        The WaterBuddy Basic is there for those that just need a reminder that their plant needs water.<br>
+        This is all done trough the smart monitor that you put in your plant's pot, which will monitor the hydration needs.<br>
+        So, if your plant is in need of water, the WaterBuddy basic will send a notification to your phone through the app.<br>
+        The WaterBuddy Basic is there to help you keep your plants alive!
+      </p>    
+    </div>
+
+    <div class="waterBuddyPro" id="waterBuddyPro">
+      <p>
+        <img src="Images/Plant met Waterbuddy Pro.png" alt="WaterBuddy Pro, copyright WaterBuddy" class="proInformation">
+        <h3 class="waterBuddyProText">WaterBuddy Pro</h3><br>
+        The WaterBuddy Pro does the same as the WaterBuddy Basic, but we've added a reservoir to automatically water your plants!<br>
+        Once this reservoir is running low, you'll receive a notification on your mobile through the app reminding you to fill it.<br>
+        The WaterBuddy Pro is also capable of feeding your plants when needed, thanks to smart monitoring.<br>
+        With the WaterBuddy Pro you'll never have to worry about keeping your plants alive again!
+      </p>
+    </div>    
+
+  </main>
+
+  <footer>
+
+  <!-- Onderstaand de twee download buttons onderaan de pagina -->         
+
+  <div class="download">
+    <button type="button" class="buttonFooter navbuttonFooter"><i class="fab fa-apple"></i> Download</button>
+    <button type="button" class="buttonFooter navbuttonFooter"><i class="fab fa-google-play"></i> Download</button>
+
+  </div>
+  
+  <p class="copyright">© Copyright 2021 WaterBuddy</p>
+
+  </footer>
+  
+
+</body>
+
+</html>

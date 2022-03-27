@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+
+Welkom op de Basket pagina van WaterBuddy deze pagina is gemaakt door Milan Toen
+
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Webshop Basket</title>
+
+  <!-- Favicon hiermee word het icoontje in het browser tabje gevuld -->
+  <link rel="icon" href="Images/favicon-16x16.png">  
+
+  <!-- SCC stylesheet  hiermee word mijn style sheet ingeladen-->
+  <link rel="stylesheet" href="CSS/Style_Basket.CSS" />
+
+  <!-- fontawesome script is benodigd om bepaalde icoontjes in te laden -->
+  <script src="https://kit.fontawesome.com/6c7c0095fb.js" crossorigin="anonymous"></script>
+
+  <!-- Javascript vanuit hier word alle Javascript aangestuurd -->
+  <script src="Javascript/Basket.JS" async></script>
+
+</head>
+
+
+<body>
+
+  <!-- Onderstaande code maakt in html de navigatie bar -->
+
+  <header>
+
+    <!-- Onderstaand stukje code is voor het logo in de navigatie balk -->
+
+    <a href="index.html" class="logoAnchor">
+      <div class="logo">
+        <img src="Images/logo.png" width="50" height="50" alt="WaterBuddy Logo" />
+        <span>WaterBuddy</span>
+      </div>
+    </a>
+
+    <!-- Onderstaand stukje code zorgt voor de navigatie naar anderen pagina's in de navigatie balk -->
+
+    <nav>
+      <div class="menu">
+        <button id="menuButton" class="menuButton">=</button>
+      </div>
+      <div id="menuLinks" class="menuLinks">
+        <a href="index.html" class="button navbutton">Home</a>
+        <a href="webshop.html" class="button navbutton">Webshop</a>
+        <a href="about.html" class="button navbutton">About Us</a>
+        <a href="contact.html" class="button navbutton">Contact</a>
+        <a href="Basket.html" class="button navbuttonBasket"><i class="fas fa-shopping-basket"></i></a>
+      </div>
+    </nav>
+
+  </header>
+
+  <main>
+
+  <!-- onderstaande div is het winkelmandje -->  
+ 
+  <section class="container contentSection">
+    <h2 class="sectionHeader">CART</h2>
+    <div class="cartRow">
+        <span class="cartItem cartHeader cartColumn">ITEM</span>
+        <span class="cartPrice cartHeader cartColumn">PRICE</span>
+        <span class="cartQuantity cartHeader cartColumn">QUANTITY</span>
+    </div>
+    <div class="cartItems">
+      <!-- onder deze div word het item toegeveoegd vanuit de anderen pagina-->
+
+      <!-- Onderstaande div is een test div om werking JS te testen -->
+      <!-- <div class="cartRow">
+        <div class="cartItem cartColumn">
+          <img class="cartItemImage" src="Images/waterbuddy.png" width="100" height="100">
+          <span class="cartItemTitle">WaterBuddy Basic</span>
+        </div>
+        <span class="cartPrice cartColumn">€14.99</span>
+        <div class="cartQuantity cartColumn">
+          <input class="cartQuantityInput" type="number" value="1">
+          <button class="buttonRemove" type="button">REMOVE</button>
+        </div>
+      </div> -->
+    </div>
+    <div class="cartSub">
+      <strong class="cartSubTitle">Subtotal</strong>
+      <span class="cartSubTotal">€0</span>
+    </div>
+    <div class="cartTax">
+        <strong class="cartTaxTitle">Tax 21%</strong>
+        <span class="cartTaxTotal">€0</span>
+    </div>
+    <div class="cartTotal">
+        <strong class="cartTotalTitle">Total</strong>
+        <span class="cartTotalPrice">€0</span>
+    </div>
+    <button class="buttonShop buttonMain buttonPurchase" type="button">PURCHASE</button>
+</section>
+
+</main>
+
+
+
+</body>
+</html>
